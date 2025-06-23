@@ -18,3 +18,33 @@
 
    * On **PC1**, open **Command Prompt** (Desktop tab).
    * Type `ping 192.168.0.2` and press Enter.
+  
+***Client-Server***  
+
+1. **Add Devices**:
+
+   * Drag and drop **one Server (Server-PT)**, **two PCs (PC-PT)**, and **one Switch (Switch-PT)** into the workspace.
+
+2. **Connect the Devices**:
+
+   * Use **Copper Straight-Through** cables:
+
+     * **PC1 → Switch FastEthernet0/1**
+     * **PC2 → Switch FastEthernet0/2**
+     * **Server → Switch FastEthernet0/3**
+
+3. **Assign IP Addresses**:
+
+   * **PC1**: `192.168.0.3` / `255.255.255.0`
+   * **PC2**: `192.168.0.4` / `255.255.255.0`
+   * **Server**: `192.168.0.5` / `255.255.255.0`
+
+4. **Enable Server Service**:
+
+   * Click the **Server**, go to the **Services** tab.
+   * Enable a service like **HTTP** or **FTP**.
+
+5. **Test the Setup**:
+
+   * On **PC1**, go to **Desktop → Web Browser**.
+   * Enter: `http://192.168.0.5`
