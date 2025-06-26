@@ -5,7 +5,7 @@
 2. **Connect the PCs**:
 
    * Click the **Connections (lightning bolt)** icon.
-   * Select **Copper Straight-Through** cable.
+   * Select **Copper Cross-over** cable.
    * Click **PC1 → FastEthernet0**, then **PC2 → FastEthernet0**.
 
 3. **Assign IP Addresses**:
