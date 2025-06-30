@@ -43,3 +43,44 @@ Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 
 * Open **Command Prompt** on any PC
   ping 192.168.1.4
+
+***Star***
+
+**1. Add Devices:**
+
+* Drag and drop **5 PCs**: `PC1`, `PC2`, `PC3`, `PC4`,`PC5`.
+* Drag and drop **1 Switches**: `Switch1`.
+
+**2. Connect PCs to Switches (Straight-Through Cable):**
+
+* Click **Connections (lightning bolt icon)** → Select **Copper Straight-Through**.
+* Connect:
+
+  * **PC1 → Switch1 (FastEthernet0/1)**
+  * **PC2 → Switch1 (FastEthernet0/2)**
+  * **PC3 → Switch1 (FastEthernet0/3)**
+  * **PC4 → Switch1 (FastEthernet0/4)**
+  * **PC5 → Switch1 (FastEthernet0/5)**
+
+**3. Assign IP Addresses to All PCs:**
+
+Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
+
+* **PC1:** `192.168.1.1`/`255.255.255.0`
+
+* **PC2:**
+`192.168.1.2`/`255.255.255.0`
+
+* **PC3:**
+`192.168.1.3`/`255.255.255.0`
+
+* **PC4:**
+`192.168.1.4`/`255.255.255.0`
+
+* **PC5:**
+`192.168.1.5`/`255.255.255.0`
+
+**4. Test the Network:**
+
+* Open **Command Prompt** on any PC
+  ping 192.168.1.4
