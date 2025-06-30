@@ -7,7 +7,6 @@
 
 **2. Connect PCs to Switches (Straight-Through Cable):**
 
-* Click **Connections (lightning bolt icon)** → Select **Copper Straight-Through**.
 * Connect:
 
   * **PC1 → Switch1 (FastEthernet0/1)**
@@ -17,7 +16,6 @@
 
 **3. Connect Switches Together (Crossover Cable):**
 
-* Select **Copper Cross-over** cable.
 * Connect:
 
   * **Switch1 (Fa0/24) ↔ Switch2 (Fa0/24)**
@@ -53,7 +51,6 @@ Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 
 **2. Connect PCs to Switches (Straight-Through Cable):**
 
-* Click **Connections (lightning bolt icon)** → Select **Copper Straight-Through**.
 * Connect:
 
   * **PC1 → Switch1 (FastEthernet0/1)**
