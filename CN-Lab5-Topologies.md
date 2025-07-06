@@ -22,7 +22,7 @@
   * **Switch2 (Fa0/23) ↔ Switch3 (Fa0/23)**
   * **Switch3 (Fa0/22) ↔ Switch4 (Fa0/22)**
 
-**5. Assign IP Addresses to All PCs:**
+**4. Assign IP Addresses to All PCs:**
 
 Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 
@@ -114,7 +114,7 @@ Then, drag and drop **four 2960 switches** into the workspace.
 
 * Subnet Mask: `255.255.255.0`(same for all)
 
-**4. Test the Network:**
+**5. Test the Network:**
 
 * Open **Command Prompt** on any PC
   ping 192.168.0.4
