@@ -1,4 +1,4 @@
-***Bus***
+### ***Bus***
 
 **1. Add Devices:**
 
@@ -42,7 +42,7 @@ Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 * Open **Command Prompt** on any PC
   ping 192.168.1.4
 
-***Star***
+### ***Star***
 
 **1. Add Devices:**
 
@@ -76,6 +76,43 @@ Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 
 * **PC5:**
 `192.168.1.5`/`255.255.255.0`
+
+**4. Test the Network:**
+
+* Open **Command Prompt** on any PC
+  ping 192.168.1.4
+
+### ***Ring***
+
+**1. Add Devices:**
+
+From the **bottom-left panel**, drag and drop **four PC-PT devices** into the workspace.
+Then, drag and drop **four 2960 switches** into the workspace.
+
+**2. Connect the PCs:(Copper Straight-Through)**
+
+  * **PC1 → Switch1 (FastEthernet0/1)**
+  * **PC2 → Switch2 (FastEthernet0/1)**
+  * **PC3 → Switch3 (FastEthernet0/1)**
+  * **PC4 → Switch4 (FastEthernet0/1)**
+
+**3. Connect the Switches:(Copper Cross-over)**
+
+  * **Switch1 (FastEthernet0/24) ↔ Switch2 (FastEthernet0/24)**
+  * **Switch2 (FastEthernet0/23) ↔ Switch3 (FastEthernet0/23)**
+  * **Switch3 (FastEthernet0/22) ↔ Switch4 (FastEthernet0/22)**
+
+**4. Configure IP Addresses:**
+
+* **PC1**:* IP Address: `192.168.0.1`
+
+* **PC2**:* IP Address: `192.168.0.2`
+
+* **PC3**:* IP Address: `192.168.0.3`
+
+* **PC4**:* IP Address: `192.168.0.4`
+
+* Subnet Mask: `255.255.255.0`(same for all)
 
 **4. Test the Network:**
 
