@@ -22,7 +22,7 @@
   * **Switch2 (Fa0/23) ↔ Switch3 (Fa0/23)**
   * **Switch3 (Fa0/22) ↔ Switch4 (Fa0/22)**
 
-**4. Assign IP Addresses to All PCs:**
+**5. Assign IP Addresses to All PCs:**
 
 Go to each PC → **Desktop** tab → **IP Configuration**, and enter:
 
