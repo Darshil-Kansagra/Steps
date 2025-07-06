@@ -113,7 +113,7 @@ Then, drag and drop **four 2960 switches** into the workspace.
 
 * **PC4**: IP Address: `192.168.0.4`
 
-* Subnet Mask: `255.255.255.0`(same for all)
+* **Subnet Mask:** `255.255.255.0` (same for all)
 
 **5. Test the Network:**
 
