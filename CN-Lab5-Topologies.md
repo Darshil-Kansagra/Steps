@@ -104,13 +104,13 @@ Then, drag and drop **four 2960 switches** into the workspace.
 
 **4. Configure IP Addresses:**
 
-* **PC1**:* IP Address: `192.168.0.1`
+* **PC1**: IP Address: `192.168.0.1`
 
-* **PC2**:* IP Address: `192.168.0.2`
+* **PC2**: IP Address: `192.168.0.2`
 
-* **PC3**:* IP Address: `192.168.0.3`
+* **PC3**: IP Address: `192.168.0.3`
 
-* **PC4**:* IP Address: `192.168.0.4`
+* **PC4**: IP Address: `192.168.0.4`
 
 * Subnet Mask: `255.255.255.0`(same for all)
 
