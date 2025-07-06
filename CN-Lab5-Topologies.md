@@ -117,4 +117,4 @@ Then, drag and drop **four 2960 switches** into the workspace.
 **4. Test the Network:**
 
 * Open **Command Prompt** on any PC
-  ping 192.168.1.4
+  ping 192.168.0.4
