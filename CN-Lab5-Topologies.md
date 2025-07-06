@@ -101,6 +101,7 @@ Then, drag and drop **four 2960 switches** into the workspace.
   * **Switch1 (FastEthernet0/24) ↔ Switch2 (FastEthernet0/24)**
   * **Switch2 (FastEthernet0/23) ↔ Switch3 (FastEthernet0/23)**
   * **Switch3 (FastEthernet0/22) ↔ Switch4 (FastEthernet0/22)**
+  * **Switch4 (FastEthernet0/21) ↔ Switch1 (FastEthernet0/20)**
 
 **4. Configure IP Addresses:**
 
