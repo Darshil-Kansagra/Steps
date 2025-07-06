@@ -59,6 +59,6 @@ From the bottom-left panel, drag and drop **four PC-PT devices** and **four 2960
 * **PC4:** 192.168.0.4
 * **Subnet Mask:** 255.255.255.0 (same for all)
 
-### **5. Test the Network:**
+**5. Test the Network:**
 
 Open **Command Prompt** on any PC and type: `192.168.0.2`
