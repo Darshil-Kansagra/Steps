@@ -40,8 +40,8 @@
 **6. Configure the PC:**
 
 * Click on the **PC** **IP Configuration**
-  * **PC1** → IP Address: `192.168.2.1`
-  * **PC2** → IP Address: `192.168.2.2`
+  * **PC1** → IP Address: `192.168.1.10`
+  * **PC2** → IP Address: `192.168.1.11`
   * Subnet Mask: `255.255.255.0` (same for both pc)
   * **DNS Server:** `192.168.1.1` (same as server IP)
 
@@ -52,3 +52,62 @@
   **`mypage.com`** → Press Enter
 
 ✅ If configured correctly, the PC should display your HTML page saying **"Welcome to mypage.com!"**
+
+### ✅ ***Full DHCP Configuration Steps (5 PCs + 1 Server)***
+
+**1. Add Devices:**
+
+* **5 PCs (PC1 to PC5)**
+* **1 Server**
+* **1 Switch (2960)**
+
+**2. Connect All Devices (Copper Straight-Through):**
+
+* **PC1 → Switch (Fa0/1)**
+* **PC2 → Switch (Fa0/2)**
+* **PC3 → Switch (Fa0/3)**
+* **PC4 → Switch (Fa0/4)**
+* **PC5 → Switch (Fa0/5)**
+* **Server → Switch (Fa0/6)**
+
+**3. Configure Static IP on Server:**
+
+* Click the **Server** → Go to **Desktop** → **IP Configuration**
+
+  * **IP Address**: `192.168.1.1`
+  * **Subnet Mask**: `255.255.255.0`
+  * **Default Gateway**: `192.168.1.1`
+
+**4. Enable and Configure DHCP on Server:**
+
+* Go to the **Services** tab → Click **DHCP**
+
+  * Turn **Service** to **ON**
+  * **Pool Name**: `LAN-Pool`
+  * **Default Gateway**: `192.168.1.1`
+  * **DNS Server**: `192.168.1.1` (or 8.8.8.8)
+  * **Starting IP Address**: `192.168.1.10`
+  * **Subnet Mask**: `255.255.255.0`
+  * **Maximum Number of Users**: `10`
+  * Click **Add**
+
+**5. Configure PCs to Receive IP via DHCP:**
+
+For **each PC (PC1 to PC5)**:
+
+* Click on the PC → Go to **Desktop** → Click **IP Configuration**
+* Select **DHCP**
+* Wait a moment → The PC will automatically receive an IP like:
+
+  * PC1: `192.168.1.10`
+  * PC2: `192.168.1.11`
+  * PC3: `192.168.1.12`
+  * PC4: `192.168.1.13`
+  * PC5: `192.168.1.14`
+
+**6. Test the Network:**
+
+* On **any PC**, go to **Desktop** → **Command Prompt**
+* Type: `ping 192.168.1.14` (or any other PC’s IP)
+
+✅ If replies are received, DHCP is working and the network is functional.
