@@ -53,7 +53,7 @@
 
 ✅ If configured correctly, the PC should display your HTML page saying **"Welcome to mypage.com!"**
 
-### ✅ ***Full DHCP Configuration Steps (5 PCs + 1 Server)***
+### ***Full DHCP Configuration Steps (5 PCs + 1 Server)***
 
 **1. Add Devices:**
 
@@ -112,7 +112,7 @@ For **each PC (PC1 to PC5)**:
 
 ✅ If replies are received, DHCP is working and the network is functional.
 
-### ✅ ***FTP Server Configuration***
+### ***FTP Server Configuration***
 
 **1. Add Devices:**
 
