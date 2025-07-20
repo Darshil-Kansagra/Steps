@@ -68,7 +68,7 @@
 * **PC3 → Switch (Fa0/3)**
 * **PC4 → Switch (Fa0/4)**
 * **PC5 → Switch (Fa0/5)**
-* **Server → Switch (Fa0/6)**
+* **Server → Switch (Fa0/24)**
 
 **3. Configure Static IP on Server:**
 
@@ -111,3 +111,76 @@ For **each PC (PC1 to PC5)**:
 * Type: `ping 192.168.1.14` (or any other PC’s IP)
 
 ✅ If replies are received, DHCP is working and the network is functional.
+
+### ✅ ***FTP Server Configuration***
+
+**1. Add Devices:**
+
+* From the bottom-left panel, drag and drop into the workspace:
+
+  * **2 PCs (PC1 and PC2)**
+  * **1 Server**
+  * **1 Switch (e.g., 2960)**
+
+**2. Connect All Devices (Copper Straight-Through):**
+
+* **PC1 → Switch (Fa0/1)**
+* **PC2 → Switch (Fa0/2)**
+* **Server → Switch (Fa0/24)**
+
+**3. Configure Static IP on Server:**
+
+* Click **Server** → Go to **Desktop** → **IP Configuration**
+
+  * **IP Address**: `192.168.1.1`
+  * **Subnet Mask**: `255.255.255.0`
+  * **Default Gateway**: `192.168.1.1`
+ 
+**4. Configure IP on PCs:**
+
+* Go to **Desktop** → **IP Configuration**
+
+  * **PC1 IP**: `192.168.1.10`
+  * **PC2 IP**: `192.168.1.11`
+  * **Subnet Mask**: `255.255.255.0`
+  * **Default Gateway**: `192.168.1.1`
+
+**5. Enable FTP Service and Set User:**
+
+* On **Server**, go to **Services** tab → Select **FTP**
+
+  * Turn **FTP Service** **ON**
+  * Under **User Setup**:
+
+    * **Username**: `user1`
+    * **Password**: `cn`
+    * **Permissions**: Check all boxes (Read, Write, Delete, List, Rename)
+    * Click **Add**
+
+**6. Test Network Connectivity:**
+
+* On **PC1**, go to **Command Prompt**
+
+  * Type: `ping 192.168.1.1`
+* You should receive replies from the FTP server.
+
+**7. Upload a File to FTP Server (PC1):**
+
+* On **PC1**, go to **Desktop** → **FTP**
+
+  * **Server IP**: `192.168.1.1`
+  * **Username**: `user1`
+  * **Password**: `cn`
+  * Click **Connect**
+  * In the FTP window, click **Browse** and select a local file (e.g., `.txt`)
+  * Click **Upload**
+
+**8. Download File from FTP Server (PC2):**
+
+* On **PC2**, go to **Desktop** → **FTP**
+
+  * Connect using same server IP, username, and password
+  * You’ll see the uploaded file listed
+  * Select the file and click **Download**
+
+✅ **You have now successfully shared a file between two PCs using an FTP Server in Packet Tracer.**
