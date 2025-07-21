@@ -1,5 +1,5 @@
 ### ***DNS Server Configuration***
-
+**Domain Name System**
 **1. Add Devices:**
 
 * **2 PC-PT**
@@ -53,8 +53,8 @@
 
 ✅ If configured correctly, the PC should display your HTML page saying **"Welcome to mypage.com!"**
 
-### ***Full DHCP Configuration Steps (5 PCs + 1 Server)***
-
+### ***Full DHCP Configuration***
+**Dynamic Host Configuration Protocol**
 **1. Add Devices:**
 
 * **5 PCs (PC1 to PC5)**
@@ -113,7 +113,7 @@ For **each PC (PC1 to PC5)**:
 ✅ If replies are received, DHCP is working and the network is functional.
 
 ### ***FTP Server Configuration***
-
+**File Transfer Protocol**
 **1. Add Devices:**
 
 * From the bottom-left panel, drag and drop into the workspace:
