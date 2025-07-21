@@ -1,5 +1,6 @@
 ### ***DNS Server Configuration***
 **Domain Name System**
+
 **1. Add Devices:**
 
 * **2 PC-PT**
