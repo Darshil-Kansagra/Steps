@@ -56,6 +56,7 @@
 
 ### ***Full DHCP Configuration***
 **Dynamic Host Configuration Protocol**
+
 **1. Add Devices:**
 
 * **5 PCs (PC1 to PC5)**
@@ -115,6 +116,7 @@ For **each PC (PC1 to PC5)**:
 
 ### ***FTP Server Configuration***
 **File Transfer Protocol**
+
 **1. Add Devices:**
 
 * From the bottom-left panel, drag and drop into the workspace:
