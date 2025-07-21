@@ -82,8 +82,8 @@
 
 * Go to the **Services** tab → Click **DHCP**
 
-  * Turn **Service** to **ON**
-  * **Pool Name**: `LAN-Pool`
+  * Turn **Service** to **ON** and Edit `serverPool`
+  * **Pool Name**: `serverPool`
   * **Default Gateway**: `192.168.1.1`
   * **DNS Server**: `192.168.1.1` (or 8.8.8.8)
   * **Starting IP Address**: `192.168.1.10`
