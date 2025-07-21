@@ -164,23 +164,27 @@ For **each PC (PC1 to PC5)**:
   * Type: `ping 192.168.1.1`
 * You should receive replies from the FTP server.
 
-**7. Upload a File to FTP Server (PC1):**
+**7. Create a File to FTP Server (PC1)**
 
-* On **PC1**, go to **Desktop** → **FTP**
+* On **PC1**, go to **Desktop** → **Text Editor**
+  * Type: `Hello Computer Network`
+  * **Ctrl+S** and give file name as **cnfile.txt**
 
-  * **Server IP**: `192.168.1.1`
-  * **Username**: `user1`
-  * **Password**: `cn`
-  * Click **Connect**
-  * In the FTP window, click **Browse** and select a local file (e.g., `.txt`)
-  * Click **Upload**
+**8. Upload a File to FTP Server (PC1)**
 
-**8. Download File from FTP Server (PC2):**
+* On **PC1**, go to **Desktop** → **Command Prompt**
 
-* On **PC2**, go to **Desktop** → **FTP**
+  * Type: `ftp 192.168.1.1`
+  * Enter username and password
+  * `put cnfile.txt` to server
+* You should receive replies from the FTP server.
 
-  * Connect using same server IP, username, and password
-  * You’ll see the uploaded file listed
-  * Select the file and click **Download**
+**9. Download File from FTP Server (PC2):**
+
+* On **PC2**, go to **Desktop** → **Command Prompt**
+
+  * Type: `ftp 192.168.1.1`
+  * Enter username and password
+  * `get cnfile.txt` to server
 
 ✅ **You have now successfully shared a file between two PCs using an FTP Server in Packet Tracer.**
