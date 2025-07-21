@@ -89,7 +89,7 @@
   * **Starting IP Address**: `192.168.1.10`
   * **Subnet Mask**: `255.255.255.0`
   * **Maximum Number of Users**: `10`
-  * Click **Add**
+  * Click **Save**
 
 **5. Configure PCs to Receive IP via DHCP:**
 
