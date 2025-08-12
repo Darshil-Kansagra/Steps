@@ -6,7 +6,7 @@
 6. Click on GigabitEthernet 0/0/0 under INTERFACE. Set the IP Address to 192.168.10.2 and the Subnet Mask to 255.255.255.0 for other route
 7. Click on GigabitEthernet 0/0/1 and set the IP Address to 192.168.2.1 with the Subnet Mask as 255.255.255.0 for other router.
 8. Set ip address to first pc 192.168.1.2 and default gateway to 192.168.1.1
-9. Set ip address to first pc 192.168.2.2 and default gateway to 192.168.2.1
+9. Set ip address to second pc 192.168.2.2 and default gateway to 192.168.2.1
 10. Under ROUTING, select Static. Click Add, and enter the following: Network: 192.168.2.0 Mask: 255.255.255.0 NextHop: 192.168.10.2
 11. Under ROUTING, select Static. Click Add, and enter the following: Network: 192.168.1.0 Mask: 255.255.255.0 NextHop: 192.168.10.1
 12. Test the network using ping 192.168.2.2
