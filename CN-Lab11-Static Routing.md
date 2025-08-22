@@ -1,12 +1,61 @@
-1. Add two router and two pc
-2. Connect the Routers: Router, and select the GigabitEthernet 0/0/0 interface. With other router cross-over cable
-3. Both pc to router, select the FastEthernet0 interface, and connect it to GigabitEthernet 0/0/1 on Router0 with straightthrough
-4. Go to config tab on router0 and GigabitEthernet 0/0/0 under INTERFACE. Set the IP Address to 192.168.10.1 and the Subnet Mask to 255.255.255.0
-5. Go to config tab on router0 GigabitEthernet 0/0/1 and set the IP Address to 192.168.1.1 with the Subnet Mask as 255.255.255.0
-6. Click on router1 and open GigabitEthernet 0/0/0 under INTERFACE. Set the IP Address to 192.168.10.2 and the Subnet Mask to 255.255.255.0 for other route
-7. Click on router1 and open GigabitEthernet 0/0/1 and set the IP Address to 192.168.2.1 with the Subnet Mask as 255.255.255.0 for other router.
-8. Set ip address to first pc 192.168.1.2 and default gateway to 192.168.1.1
-9. Set ip address to second pc 192.168.2.2 and default gateway to 192.168.2.1
-10. Under ROUTING, select Static. Click Add, and enter the following: Network: 192.168.2.0 Mask: 255.255.255.0 NextHop: 192.168.10.2
-11. Under ROUTING, select Static. Click Add, and enter the following: Network: 192.168.1.0 Mask: 255.255.255.0 NextHop: 192.168.10.1
-12. Test the network using ping 192.168.2.2
+# Static Routing
+
+1. **Add Devices**
+
+   - Add **two routers** and **two PCs**
+
+2. **Connect the Routers**
+
+   - Select the `GigabitEthernet0/0/0` interface on each router
+   - Connect them using a **crossover cable**
+
+3. **Connect PCs to Router0**
+
+   - Select the `FastEthernet0` interface on each PC
+   - Connect them to `GigabitEthernet0/0/1` on Router0 using a **straight-through cable**
+
+4. **Configure Router0 Interfaces**
+
+   - `GigabitEthernet0/0/0`:
+     - IP Address: `192.168.10.1`
+     - Subnet Mask: `255.255.255.0`
+   - `GigabitEthernet0/0/1`:
+     - IP Address: `192.168.1.1`
+     - Subnet Mask: `255.255.255.0`
+
+5. **Configure Router1 Interfaces**
+
+   - `GigabitEthernet0/0/0`:
+     - IP Address: `192.168.10.2`
+     - Subnet Mask: `255.255.255.0`
+   - `GigabitEthernet0/0/1`:
+     - IP Address: `192.168.2.1`
+     - Subnet Mask: `255.255.255.0`
+
+6. **Configure PC IP Settings**
+
+   - **PC1**:
+     - IP Address: `192.168.1.2`
+     - Subnet Mask: `255.255.255.0`
+     - Default Gateway: `192.168.1.1`
+   - **PC2**:
+     - IP Address: `192.168.2.2`
+     - Subnet Mask: `255.255.255.0`
+     - Default Gateway: `192.168.2.1`
+
+7. **Configure Static Routing**
+
+   - On **Router0**, add route:
+     - Network: `192.168.2.0`
+     - Mask: `255.255.255.0`
+     - Next Hop: `192.168.10.2`
+   - On **Router1**, add route:
+     - Network: `192.168.1.0`
+     - Mask: `255.255.255.0`
+     - Next Hop: `192.168.10.1`
+
+8. **Test the Network**
+   - From **PC1**, run:
+     ```bash
+     ping 192.168.2.2
+     ```
