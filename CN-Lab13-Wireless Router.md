@@ -1,5 +1,5 @@
 **Step 1:** Choose the Devices.<br>
-  • Wireless Router: Use the "WRT300N" wireless router.
+  • Wireless Router: Use the "WRT300N" wireless router.<br>
   • PCs or Laptops: Use "PC-PT" or "Laptop-PT" devices.<br>
 **Step 2:** Place the Devices on the WorkspaceDrag and drop the Wireless Router And PC or Laptop into the workspace.
 **Step 3:** Connect the Devices<br>
